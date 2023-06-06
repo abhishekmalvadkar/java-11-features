@@ -11,7 +11,7 @@ class StripLeadingMethodInStringClassTest {
 		var featureClass = new StripLeadingMethodInStringClass();
 		String userName = " abhi";
 		String result = featureClass.feature(userName);
-		assertThat(result.length()).isEqualTo(4);
+		assertThat(result).hasSize(4);
 	}
 	
 	@Test
@@ -19,7 +19,7 @@ class StripLeadingMethodInStringClassTest {
 		var featureClass = new StripLeadingMethodInStringClass();
 		String userName = " abhi ";
 		String result = featureClass.feature(userName);
-		assertThat(result.length()).isEqualTo(5);
+		assertThat(result).hasSize(5);
 	}
 	
 	@Test
@@ -27,7 +27,7 @@ class StripLeadingMethodInStringClassTest {
 		var featureClass = new StripLeadingMethodInStringClass();
 		String userName = "abhi";
 		String result = featureClass.feature(userName);
-		assertThat(result.length()).isEqualTo(4);
+		assertThat(result).hasSize(4);
 	}
 
 }
