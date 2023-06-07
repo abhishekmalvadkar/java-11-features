@@ -35,7 +35,7 @@ class StripMethodInStringClassTest {
 		var featureClass = new StripMethodInStringClass();
 		String email = " ";
 		String result = featureClass.feature(email);
-		assertThat(result).hasSize(0);
+		assertThat(result).isEmpty();
 	}
 
 }
