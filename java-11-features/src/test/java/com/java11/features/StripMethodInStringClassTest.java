@@ -37,5 +37,14 @@ class StripMethodInStringClassTest {
 		String result = featureClass.feature(email);
 		assertThat(result).isEmpty();
 	}
+	
+	
+	@Test
+	void testFeatureIfStringHasOnlyThreeSpace() {
+		var featureClass = new StripMethodInStringClass();
+		String email = "   ";
+		String result = featureClass.feature(email);
+		assertThat(result).isEmpty();
+	}
 
 }
