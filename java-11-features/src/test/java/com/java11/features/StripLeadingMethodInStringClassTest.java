@@ -29,5 +29,13 @@ class StripLeadingMethodInStringClassTest {
 		String result = featureClass.feature(userName);
 		assertThat(result).hasSize(4);
 	}
+	
+	@Test
+	void testFeatureIfStringHasOnlySevenSpace() {
+		var featureClass = new StripLeadingMethodInStringClass();
+		String email = "       ";
+		String result = featureClass.feature(email);
+		assertThat(result).isEmpty();
+	}
 
 }
